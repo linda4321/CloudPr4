@@ -14,6 +14,7 @@ import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import com.googlecode.objectify.annotation.Index;
 import com.googlecode.objectify.annotation.Parent;
+import com.googlecode.objectify.annotation.Cache;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -22,7 +23,7 @@ import java.util.List;
 /**
  * Conference class stores conference information.
  */
-@Entity
+@Cache @Entity
 public class Conference {
 
     private static final String DEFAULT_CITY = "Default City";
